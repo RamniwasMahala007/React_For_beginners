@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.heading{
+    background-color: aqua;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+h1, p, form{
+
+    text-align: center;
+    margin: 10%;
+}
+.vertical-center {
+  text-align: center;
+  }
+  button{
+    color: red;
+    background-color: greenyellow;
+  }
+ 
+  
