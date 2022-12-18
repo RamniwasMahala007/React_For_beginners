@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
 import './index.css';
 
+function GreetingCode()
+{
 
-let curDate = new Date();
-curDate = curDate.getHours(); // here this getHours assigh the current time(only hour) value in curDate variable
+  let curDate = new Date();
+curDate = curDate.getHours(); 
+  
 let greeting ='';
 const cssStyle = { };
+
 if(curDate >= 1 && curDate <= 11)
 {
   greeting = "Good Morning";
@@ -26,15 +29,14 @@ else{
   cssStyle.color = "blue";
 }
 
-
-
-const root = document.getElementById('root');
-ReactDOM.render(
-  <>
-    <div className="heading">
-       <h1>Hii Ramniwas, <span  style={cssStyle}>{greeting}</span></h1>
+  return(
+    <>
+   <div className="heading">
+    <h1>Hii Ramniwas, <span  style={cssStyle}>{greeting}</span></h1>
     </div>
-  </> 
-          
-  ,root);
+    </>
+   
+  );
+}
 
+export default GreetingCode;
